@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="top">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="@color/black">
+        <ImageView
+            android:id="@+id/infoImgBack"
+            android:src="@drawable/back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+        <ImageView
+            android:id="@+id/infoImgIcon"
+            android:src="@drawable/appicon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/infoImgInfo"
+            android:src="@drawable/info"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@color/black"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/infoTxtAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Regain App"
+                android:textColor="#19C5B6"
+                android:textSize="40dp"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+            <TextView
+                android:id="@+id/infoTxtQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/MaedaQuote"
+                android:textColor="#55CB49"
+                android:textSize="30dp"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+            <TextView
+                android:id="@+id/infoTxtInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Information"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+            <TextView
+                android:id="@+id/infoTxtSmart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/SmartDesign"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:gravity="center"
+            android:padding="50dp">
+            <ImageView
+                android:id="@+id/infoImgBack"
+                android:src="@drawable/instruction_logo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:clickable="true" />
+            <ImageView
+                android:id="@+id/infoImgIcon"
+                android:src="@drawable/SmartDesLogo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <ImageView
+                android:id="@+id/infoImgInfo"
+                android:src="@drawable/UoN_Logo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:clickable="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

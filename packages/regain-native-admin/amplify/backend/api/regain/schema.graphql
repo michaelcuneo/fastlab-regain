@@ -1,0 +1,21 @@
+type RETask 
+  @model 
+  @auth(rules: [
+      {allow: groups, groups: ["Administrators"], queries: [get, list], mutations: [create, update, delete]},
+      {allow: groups, groups: ["Practitioners"], queries: [get, list], mutations: [create, update, delete]},
+      {allow: groups, groups: ["Clients"], queries: [get, list], mutations: null},
+      {allow: groups, groups: ["Carers"], queries: [get, list], mutations: null},
+    ])
+{
+  id: ID!
+  title: String!
+  description: String
+  status: String
+}
+type REPrivateNote
+  @model
+  @auth(rules: [{allow: owner}])
+{
+  id: ID!
+  content: String!
+}

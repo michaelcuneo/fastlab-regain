@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    android:gravity="top">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="@color/black">
+        <ImageView
+            android:id="@+id/contImgBack"
+            android:src="@drawable/back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/contImgIcon"
+            android:src="@drawable/appicon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/contImgInfo"
+            android:src="@drawable/info"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+    </LinearLayout>
+    <GridLayout
+        android:id="@+id/contGridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:background="@color/white"
+        android:columnCount="3"
+        android:rowCount="6"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+    <!-- content in here-->
+        <VideoView
+            android:layout_width="wrap-content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:src="@drawable/main" />
+        <TextView
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="controll panel here"
+            android:layout_height="40dp"
+            android:gravity="center" />
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/contGroupGrid"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_gravity="center">
+    <!-- buttons here for each exercise group-->
+    </GridLayout>
+    <TextView
+        android:id="@+id/contTxtDebug"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="debug"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_gravity="center" />
+</LinearLayout>

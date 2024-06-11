@@ -1,0 +1,14 @@
+{
+  "resourceName": "regainstorage",
+  "policyUUID": "ef98b62c",
+  "bucketName": "regain-storage",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

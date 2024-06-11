@@ -1,0 +1,97 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "regain-admin-dev-20190916103624-authRole",
+			"UnauthRoleArn": "arn:aws:iam::885973830331:role/regain-admin-dev-20190916103624-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::885973830331:role/regain-admin-dev-20190916103624-authRole",
+			"Region": "ap-southeast-2",
+			"DeploymentBucketName": "regain-admin-dev-20190916103624-deployment",
+			"UnauthRoleName": "regain-admin-dev-20190916103624-unauthRole",
+			"StackName": "regain-admin-dev-20190916103624",
+			"StackId": "arn:aws:cloudformation:ap-southeast-2:885973830331:stack/regain-admin-dev-20190916103624/03235fb0-d81a-11e9-bd8f-0a1a04ef0eac"
+		}
+	},
+	"auth": {
+		"regainadmin19198c7b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/regain-admin-dev-20190916103624-deployment/amplify-cfn-templates/auth/regainadmin19198c7b-cloudformation-template.yml",
+				"logicalId": "authregainadmin19198c7b"
+			},
+			"lastPushTimeStamp": "2019-10-29T04:15:37.492Z",
+			"output": {
+				"AppClientSecret": "105e0q2236mqdtla8qf58gm29eaf8e87kcdrv2o4jjq0r98eaao8",
+				"UserPoolId": "ap-southeast-2_YTjbr076s",
+				"AppClientIDWeb": "2rooud5l6svhuhji20hesrtjd1",
+				"AppClientID": "3iejkgv6glhokishlb03eski0f",
+				"IdentityPoolId": "ap-southeast-2:5cd4e12c-d29a-4278-bcde-37cbb549c08f",
+				"IdentityPoolName": "regainadmin19198c7b_identitypool_19198c7b__dev",
+				"UserPoolName": "regainadmin19198c7b_userpool_19198c7b"
+			},
+			"lastPushDirHash": "O8xAcmLgGPG6OazCWd76rcSurLk="
+		}
+	},
+	"storage": {
+		"regainadmin": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/regain-admin-dev-20190916103624-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storageregainadmin"
+			},
+			"lastPushTimeStamp": "2019-10-29T04:15:37.519Z",
+			"output": {
+				"BucketName": "regain-admin-storage-dev",
+				"Region": "ap-southeast-2"
+			},
+			"lastPushDirHash": "59SKxTV2C/dDlv9yrx1KT0O+qZw="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/regain-admin-dev-20190916103624-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-10-29T04:15:37.521Z",
+			"output": {
+				"CloudFrontSecureURL": "https://d3lgjpeqtanv0v.cloudfront.net",
+				"S3BucketSecureURL": "https://regain-hosting-dev.s3.amazonaws.com",
+				"WebsiteURL": "http://regain-hosting-dev.s3-website-ap-southeast-2.amazonaws.com",
+				"CloudFrontDistributionID": "E22RKTAX479HSG",
+				"Region": "ap-southeast-2",
+				"HostingBucketName": "regain-hosting-dev",
+				"CloudFrontDomainName": "d3lgjpeqtanv0v.cloudfront.net"
+			},
+			"lastPushDirHash": "193AujOjGKyQ9ktljrxZ7QFbfMg="
+		}
+	},
+	"api": {
+		"regain": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authregainadmin19198c7b"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "qya7n5hnyzbpboebh7e2vzuw7e",
+				"GraphQLAPIEndpointOutput": "https://3qxrftgpevbq5etm2xk6bm5mlm.appsync-api.ap-southeast-2.amazonaws.com/graphql"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/regain-admin-dev-20190916103624-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiregain"
+			},
+			"lastPushTimeStamp": "2019-10-29T04:15:39.596Z",
+			"lastPushDirHash": "4CSMjUoJQMRhXKoRIX1fRWh9rzE="
+		}
+	}
+}

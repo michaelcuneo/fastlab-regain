@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="@color/black">
+        <ImageView
+            android:id="@+id/setImgBack"
+            android:src="@drawable/back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+        <ImageView
+            android:id="@+id/contImgIcon"
+            android:src="@drawable/appicon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Space
+            android:id="@+id/setImgInfo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+    </LinearLayout>
+    <GridLayout
+        android:id="@+id/setGridLayout"
+        android:layout_width="1100dp"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <TextView
+            android:text="Header 0"
+            android:textSize="20dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@color/blue"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:layout_margin="2dp" />
+        <TextView
+            android:text="Functional Strengthening"
+            android:textSize="20dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@color/blue"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:text="First Row"
+            android:textSize="20dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@color/blue"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:layout_margin="2dp" />
+        <TextView
+            android:text="Last Cell"
+            android:textSize="15dp"
+            android:layout_row="5"
+            android:layout_column="4" />
+    </GridLayout>
+    <TextView
+        android:id="@+id/setTxtDebug"
+        android:layout_width="800dp"
+        android:layout_height="50dp"
+        android:text="debug"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:padding="10dp" />
+    <Button
+        android:id="@+id/setButDefault"
+        android:layout_width="160.0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/green_btn_bg"
+        android:textColor="@color/white"
+        android:text="Set to default"
+        android:textSize="20dp"
+        android:layout_gravity="center" />
+</LinearLayout>

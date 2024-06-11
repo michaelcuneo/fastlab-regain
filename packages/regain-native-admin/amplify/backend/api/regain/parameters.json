@@ -1,0 +1,7 @@
+{
+  "AppSyncApiName": "regain",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": ["authregainadmin19198c7b", "Outputs.UserPoolId"]
+  }
+}

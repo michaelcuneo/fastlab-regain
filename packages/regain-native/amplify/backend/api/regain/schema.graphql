@@ -1,0 +1,71 @@
+type RETask 
+  @model 
+  @auth(rules: [
+      {allow: groups, groups: ["Administrators"], queries: [get, list], mutations: [create, update, delete]},
+      {allow: groups, groups: ["Practitioners"], queries: [get, list], mutations: [create, update, delete]},
+      {allow: groups, groups: ["Clients"], queries: [get, list], mutations: null},
+      {allow: groups, groups: ["Carers"], queries: [get, list], mutations: null},
+    ])
+{
+  id: ID!
+  title: String!
+  description: String
+  status: String
+}
+type REPrivateNote
+  @model
+  @auth(rules: [{allow: owner}])
+{
+  id: ID!
+  content: String!
+}
+type REAdministrator @model {
+  id: ID!
+  username: String!
+  firstName: String!
+  lastName: String!
+  email: String!
+  phoneNumber: String!
+}
+type REPractitioner @model {
+  id: ID!
+  username: String!
+  firstName: String!
+  lastName: String!
+  email: String!
+  phoneNumber: String!
+  clients: [REClient] @connection(name: "PractitionerClients")
+  carers: [REPractitionerCarer] @connection(name: "PractitionersCarers")
+}
+type REClient @model {
+  id: ID!
+  username: String!
+  firstName: String!
+  lastName: String!
+  phoneNumber: String!
+  email: String!
+  practitionerId: String!
+  practitioner: REPractitioner! @connection(name: "PractitionerClients")
+  carerId: String
+  carer: [REClientCarer] @connection(name: "ClientCarer")
+}
+type RECarer @model {
+  id: ID!
+  username: String!
+  firstName: String!
+  lastName: String!
+  phoneNumber: String!
+  email: String!
+  client: [REClientCarer] @connection(name: "CarerClient")
+  pratictioner: [REPractitionerCarer] @connection(name: "CarersPractitioners")
+}
+type REClientCarer @model {
+  id: ID!
+  client: REClient! @connection(name: "ClientCarer")
+  carer: RECarer! @connection(name: "CarerClient")
+}
+type REPractitionerCarer @model {
+  id: ID!
+  practitioner: REPractitioner! @connection(name: "PractitionersCarers")
+  carer: RECarer! @connection(name: "CarersPractitioners")
+}

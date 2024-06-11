@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="@color/black">
+        <ImageView
+            android:id="@+id/headerBack"
+            android:src="@drawable/back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+        <ImageView
+            android:id="@+id/headerIcon"
+            android:src="@drawable/appicon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/headerInfo"
+            android:src="@drawable/info"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+    </LinearLayout>
+  <GridLayout
+    android:id="@+id/setGrid"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:rowCount="7"
+        android:columnCount="5"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+    <!-- Header row -->
+        <TextView
+            android:text="Warm-Up"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+        <TextView
+            android:text="Stretching"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+        <TextView
+            android:text="Strengthening"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+        <TextView
+            android:text="Balance"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+        <TextView
+            android:text="Agility"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+    <!-- First row -->
+        <TextView
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="Slow Marching"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+    <!-- Second row -->
+        <TextView
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="Slow Marching and Arm Swing"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+    <!-- Third row -->
+        <TextView
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="Knee Circles"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+    <!-- Fourth row -->
+        <TextView
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="Ankle Circles"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_width="200dp" />
+    </GridLayout>
+</LinearLayout>

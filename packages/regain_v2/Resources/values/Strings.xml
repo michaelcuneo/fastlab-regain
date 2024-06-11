@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">Android_02</string>
+  <string name="Password">4069</string>
+  <string name="MaedaQuote">\"Simplicity is about subtracting the obvious and adding the meaningful.\" - John Maeda</string>
+  <string name="Information">Developed by a collaboration between the School of Creative Industries and the School of Engineering and Built Environment at the University of Newcastle, Australia.</string>
+  <string name="SmartDesign">SMART DESIGN is a community of interdisciplinary researchers that operates across traditional academic disciplines and boundaries. Our approach to research builds common ground between diverse academic disciplines in order to address the emerging challenges and opportunities in society, industry and commerce. Our aim is to develop new hybrid forms of research activities and research scholars which will result in a new generation of graduates to lead the emerging industries and practices of the future. The Smart Design Group focuses on applying Design, IT and Health methodologies to a wide set of challenges in the public and private sectors. See smartdesign.newcastle.edu.au</string>
+
+  <string-array name="IntroText">
+    <item>
+      The purpose of this app is to help you continue to recover after a stroke. This app is designed to encourage you to participate in a series of physical exercises. For best results the exercises should be chosen individualy for you by a qualified health professional. These exercises are in no way intended as a substitute for medical consultation. The exercises have been developed to help you improve physically, especially with your balance and strength.
+    </item>
+    <item>
+      Strokes can cause weakness or paralysis in one side of the body and can result in problems with co-ordination and balance. Regular exercise can speed your recovery and may reduce your risk of having another stroke. This app will help you work through different exercises that will help your balance, strength and co-ordination. You should be medicaly stable before you start these exercises. Talk with your doctor if you are unsure.
+    </item>
+    <item>
+      We advise that you always start with a short warm-up before you start each exercise. If you are unable to stand while holding onto a support then this program is not suitable for you. Please ensure that these exercises are conducted in a safe and controlled environment. You should be able to perform these exercises without help from anyone. However, you may prefer to have someone else present to observe, ensure your safety and to provide encouragement.
+    </item>
+    <item>
+      All of these exercises can be modified if you wish, by holding the back of a chair or using a wall for support. Make sure the chair is strong and in proper repair, so that it can support your weight. Position the chair on a flat surface. Ensure there is ample room around the chair so that you cannot hit anything during the exercise. If you are using a wheelchair, make sure the brakes are locked on before commencing. If you feel stable enough you can remove your armrests and/or footplates to allow more freedom of movement.
+    </item>
+    <item>
+      You are advised to discontinue or modify any exercise that causes pain. Only move as far as you can comfortably move. If you normally experience pain when moving you may modify these exercises to avoid such pain. Wear comfortable clothing to ensure maximum movement during exercises. Wear suitable footwear with a rubber or other solid sole.
+    </item>
+    <item>
+      You should be able to speak in your normal voice and tone during your exercise sessions, If you are out of breath and unable to speak normally, then lower the intensity level by slowing down the exercise or taking a rest. As with any exercise program, if at any point you begin to feel faint, dizzy or have physical discomfort, you should stop immediately and consult a health professional.
+    </item>
+  </string-array>
+</resources>

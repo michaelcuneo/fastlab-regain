@@ -1,0 +1,53 @@
+type User @model @auth (rules: [
+    { allow: owner, ownerField: "owner", operations: [create, update, delete, read] },
+  ])
+{
+  id: ID!
+  name: String!
+  email: String!
+  phone: String!
+  onboard: Boolean!
+  selectedGroups: [UserGroups] @connection(name: "userGroupsUser")
+  owner: String
+}
+
+type UserGroups @model {
+  id: ID!
+  user: User @connection(name: "userGroupsUser")
+  group: Group @connection(name: "userGroupsGroup")
+}
+
+type Group @model @auth (rules: [
+    { allow: private },
+  ])
+{
+  id: ID!
+  title: String!
+  user: [UserGroups] @connection(name: "userGroupsGroup")
+  groupExercises: [Exercise] @connection(name: "groupExercises")
+}
+
+type Exercise @model @auth (rules: [
+    { allow: private },
+  ])
+{
+  id: ID!
+  group: Group! @connection(name: "groupExercises")
+  title: String!
+  time: String!
+  thumbnail: Image! @connection(name: "exerciseThumbnail")
+  url: String!
+  shortDescription: String!
+  longDescription: String!
+  video: String!
+}
+
+type Image @model @auth (rules: [
+    { allow: private },
+  ])
+{
+  id: ID!
+  key: String!
+  mime: String!
+  exerciseThumbnail: Exercise! @connection(name: "exerciseThumbnail")
+}

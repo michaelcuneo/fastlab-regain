@@ -1,0 +1,49 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepare": "smui-theme compile public/smui.css -i src/theme",
+    "start": "sirv public --no-clear --host --port 3001"
+  },
+  "devDependencies": {
+    "@aws-amplify/api": "^4.0.42",
+    "@aws-amplify/auth": "^4.0.0",
+    "@aws-amplify/core": "^4.0.2",
+    "@beyonk/svelte-social-auth": "^2.1.1",
+    "@macfja/svelte-persistent-store": "^1.2.0",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@smui/banner": "^4.2.0",
+    "@smui/button": "^4.2.0",
+    "@smui/card": "^4.2.0",
+    "@smui/dialog": "^4.2.0",
+    "@smui/icon-button": "^4.2.0",
+    "@smui/layout-grid": "^4.2.0",
+    "@smui/list": "^4.2.0",
+    "@smui/menu": "^4.2.0",
+    "@smui/tab": "^4.2.0",
+    "@smui/tab-bar": "^4.2.0",
+    "@smui/textfield": "^4.2.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "smui-theme": "^4.2.0",
+    "svelte": "^3.0.0",
+    "svelte-persistent-store": "^0.1.6"
+  },
+  "dependencies": {
+    "@aws-amplify/cli": "^7.6.26",
+    "sirv-cli": "^1.0.0",
+    "svelte-chota": "^1.8.4",
+    "svelte-spa-router": "^3.1.0"
+  }
+}

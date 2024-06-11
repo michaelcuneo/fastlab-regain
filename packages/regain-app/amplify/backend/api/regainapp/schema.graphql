@@ -1,0 +1,62 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type User @model {
+  id: ID!
+  username: String!
+  email: String!
+  phone: String!
+  onboard: Boolean!
+  overallProgress: Int!
+  groups: [Group] @manyToMany(relationName: "userGroups")
+  stats: [Stats] @hasMany
+  messages: [Messages] @hasMany
+}
+
+type Stats @model {
+  id: ID!
+  user: User @hasOne
+  exercise: Exercise @hasOne
+  pain: Int
+  complexity: Int
+  comments: String
+}
+
+type Group @model {
+  id: ID!
+  title: String!
+  users: [User] @manyToMany(relationName: "userGroups")
+  groupExercises: [Exercise] @manyToMany(relationName: "exerciseGroups")
+}
+
+type Exercise @model {
+  id: ID!
+  exerciseGroups: [Group] @manyToMany(relationName: "exerciseGroups")
+  title: String!
+  time: String!
+  thumbnail: Image! @hasOne
+  description: String!
+  video: Video! @hasOne
+}
+
+type Image @model {
+  id: ID!
+  key: String!
+  mime: String!
+}
+
+type Video @model {
+  id: ID!
+  key: String!
+  mime: String!
+}
+
+type Messages @model {
+  id: ID!
+  content: String!
+  type: String! @index(name: "messagesByDate", queryField: "messagesByDate" sortKeyFields: ["createdAt"])
+  createdAt: AWSDateTime
+  isSent: Boolean!
+  user: User @hasOne
+}
