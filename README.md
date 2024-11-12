@@ -18,6 +18,9 @@ Requires React-Native, Node.js, npm, or pnpm (Can break some repo's due to compa
 
 > Refer to each readme in each repo for installation instructions.
 
+The only active project right now is regain-2024, so workspaces is only set to `packages/regain-2024`.
+Edit package.json and add extra workspaces to work on more.
+
 ## License
 
 This software is not free, all IP is owned by FASTlab, The University of Newcastle and external stakeholder collaborators.
