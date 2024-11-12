@@ -5,7 +5,7 @@
 This project is a mono-repo containing two defunct regain-native and regain-native-admin repos which both ran React-Native backed by AWS Amplify, regain-admin-svelte, and a rebuild regain-app being the most current.
 
 #### Active Project.
-- `packages/regain-2024` ACTIVE REGAIN BUILD, converted from regain-app, and upgraded to SvleteKit v5.0 and AWS Amplify Gen2.
+- `packages/regain-2024` Converted from `regain-app`, and upgraded to SvleteKit v5.0 and AWS Amplify Gen2.
 
 #### Retired Projects.
 - `packages/regain_v2` original David Cornforth version.
@@ -23,7 +23,7 @@ Requires React-Native, Node.js, npm, or pnpm (Can break some repo's due to compa
 > Refer to each readme in each repo for installation instructions.
 
 The only active project right now is regain-2024, so workspaces is only set to `packages/regain-2024`.
-Edit package.json and add extra workspaces to work on more.
+Edit `package.json` and add extra workspaces to work on more.
 
 ## License
 
