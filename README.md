@@ -4,6 +4,10 @@
 
 This project is a mono-repo containing two defunct regain-native and regain-native-admin repos which both ran React-Native backed by AWS Amplify, regain-admin-svelte, and a rebuild regain-app being the most current.
 
+#### Active Project.
+- `packages/regain-2024` ACTIVE REGAIN BUILD, converted from regain-app, and upgraded to SvleteKit v5.0 and AWS Amplify Gen2.
+
+#### Retired Projects.
 - `packages/regain_v2` original David Cornforth version.
 - `packages/regain-native-admin` contains the original React-Native build.
 - `packages/regain-native` contains the original React-Native rebuild.
