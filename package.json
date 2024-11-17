@@ -1,6 +1,7 @@
 {
   "name": "@fastlab/regain",
   "version": "1.0.0",
+  "description": "Regain is a FASTlab research project for stroke recovery.",
   "private": true,
   "workspaces": [
     "packages/regain-2024"

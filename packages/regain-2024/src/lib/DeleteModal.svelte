@@ -1,8 +1,5 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import Dialog, { Title, Content, Actions } from "@smui/dialog";
-  import Button, { Label } from "@smui/button";
-  import Textfield from "@smui/textfield";
 
   import { removeGroup, removeExercise } from "$lib/aws";
 

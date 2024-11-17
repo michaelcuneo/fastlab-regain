@@ -16,6 +16,8 @@
 		"@aws-amplify/backend-cli": "^1.4.2",
 		"@michaelcuneo/button": "^0.0.1",
 		"@michaelcuneo/meltui": "^0.0.7",
+		"@michaelcuneo/meltui-components": "^0.0.9",
+		"@michaelcuneo/svelte-components": "^0.0.3",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
